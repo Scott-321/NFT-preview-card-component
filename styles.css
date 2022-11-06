@@ -1,0 +1,186 @@
+/* - Mobile: 375px */
+/* - Desktop: 1440px */
+
+
+/* Defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+/* Primary */
+--softblue: hsl(215, 51%, 70%);
+--lcyan: rgb(0, 255, 247);
+/* Neutral */
+--bodybackground: hsl(217, 54%, 11%);
+--cardbackground: hsl(216, 50%, 16%);
+--linecolor: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+/* typography */
+--font_outfit: 'Outfit', sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: var(--font_outfit);
+    background-color: var(--bodybackground);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* Main container */
+.card {
+    width: 375px;
+    background-color: var(--cardbackground);
+    padding: 1.5em;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+
+/* Hero image container*/
+.wrapper {
+    position: relative;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+
+.hero-image {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;  
+}
+
+
+/* Overlay */
+.container-overlay {
+    opacity: 0;
+    transition: 0.6s;
+}
+
+
+.overlay {
+    opacity: .35;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    border-radius: 10px;
+    background-color: var(--lcyan);  
+} 
+
+
+.icon-view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.container-overlay:hover {
+    opacity: 100;
+}
+
+
+/* h1 */
+h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin: .75em 0 .75em 0;
+    transition: .6s;
+}
+
+
+/* Targets p element and changes color to soft blue */
+.p-blue {
+    color: var(--softblue);
+    line-height: 1.5;
+}
+
+
+/* Flex container styles */
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.even-space {
+    justify-content: space-between;
+}
+
+
+.even-space {
+    align-content: space-between;
+    margin-top: 1em;
+}
+
+
+
+/* Adds margin to clock and ethereum icons */
+svg {
+    margin-right: .5em;
+}
+
+
+/* Targets ethereum icon and text */
+.light {
+    color: var(--lcyan);
+}
+
+
+/* Styles border above the profile pic section */
+.border {
+    border-top: 2px solid var(--linecolor);
+    margin: 1em 0 1em 0;
+}
+
+
+/* Colors and adds border to avatar */
+.avatar {
+    max-width: 15%;
+    border: solid white 1px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+
+/* Changes creater section text to white */
+.creator {
+    color: white;
+    transition: 0.6s;
+} 
+
+
+/* Attribution text underneath card */
+.attribution {
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: 1rem;;
+    margin: 4em  auto 0 auto;
+}
+
+
+/* Pseudo */
+h1:hover, .creator:hover {
+    color: var(--lcyan);
+}

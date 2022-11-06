@@ -45,4 +45,4 @@ It was really good to revisit the position absolute and the z-index properties t
 
 ### Continued development
 
-I am looking forward to the next project and applying what I have been learning into practice.
+I am looking forward to the next project and putting what I have been learning into practice.
